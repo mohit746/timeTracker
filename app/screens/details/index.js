@@ -58,8 +58,9 @@ class Details extends PureComponent {
         </View>
         <TouchableOpacity
           style={styles.addButton}
-          onPress={() => this.addTask()}>
-          <Text style={styles.buttonText}>{isEdit ? 'Update' : 'Add'}</Text>
+          onPress={() => this.addTask()}
+          disabled={this.state.title == '' || this.state.details == ''}>
+          <Text style={styles.buttonText}>{isEdit ? 'Update  ' : 'Add  '}</Text>
         </TouchableOpacity>
       </View>
     );

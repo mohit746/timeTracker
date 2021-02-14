@@ -47,7 +47,7 @@ class Home extends PureComponent {
           <TextInput
             style={styles.search}
             numberOfLines={1}
-            placeholder={'Search task'}
+            placeholder={'Type here to search...'}
             onChangeText={(text) => this.setState({searchValue: text})}
             value={this.state.title}
           />
@@ -58,11 +58,11 @@ class Home extends PureComponent {
           </TouchableOpacity>
         </View>
 
-        <Text style={styles.title}>Add your tasks</Text>
+        <Text style={styles.title}>{'Add your tasks'}</Text>
         <TouchableOpacity
           style={styles.addButton}
           onPress={() => this.props.navigation.navigate('Details')}>
-          <Text style={styles.buttonText}>Add Task</Text>
+          <Text style={styles.buttonText}>{'NEW  '}</Text>
         </TouchableOpacity>
         <View>
           <FlatList

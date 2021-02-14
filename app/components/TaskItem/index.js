@@ -95,8 +95,8 @@ class TaskItem extends PureComponent {
     const {item, deleteTask} = this.props;
     return (
       <View style={styles.taskContainer}>
-        <Text style={styles.title}>{item.name}</Text>
-        <Text style={styles.details}>{item.details}</Text>
+        <Text style={styles.title}>{'Title: ' + item.name}</Text>
+        <Text style={styles.details}>{'Details: ' + item.details}</Text>
         {item.startTime && (
           <Text
             style={[
@@ -117,7 +117,7 @@ class TaskItem extends PureComponent {
           onPress={() => this.handleButtonClick()}
           style={styles.button}>
           <Text style={styles.buttonText}>
-            {this.props.item.isStarted ? 'End' : 'Start'}
+            {this.props.item.isStarted ? 'Stop  ' : 'Start  '}
           </Text>
         </TouchableOpacity>
         <View style={styles.footer}>

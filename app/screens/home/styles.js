@@ -3,11 +3,11 @@ const styles = StyleSheet.create({
   addButton: {
     borderRadius: 5,
     borderWidth: 1,
-    width: 150,
+    width: '30%',
     height: 30,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#249DB5',
+    backgroundColor: '#DD9E48',
     borderColor: '#C5C8C9',
     alignSelf: 'center',
     marginBottom: 20,
